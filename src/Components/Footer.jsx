@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 pt-2 text-xl text-gray-500">
+          <div className="flex space-x-4 pt-2 text-xl text-black-800">
             <FaTwitter className="hover:text-orange-500 transition-colors cursor-pointer" />
             <FaYoutube className="hover:text-orange-500 transition-colors cursor-pointer" />
             <FaInstagram className="hover:text-orange-500 transition-colors cursor-pointer" />
@@ -53,7 +53,7 @@ const Footer = () => {
         {/* Right Columns */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 w-full md:w-2/3">
           <div>
-            <h4 className="font-semibold text-orange-600 mb-2">Features</h4>
+            <h4 className="font-semibold hover:text-orange-500 cursor-pointer ">Features</h4>
             <ul className="space-y-2 text-sm">
               <li className="hover:text-orange-500 cursor-pointer">Subscription</li>
               <li className="hover:text-orange-500 cursor-pointer">Family Plan</li>
@@ -66,7 +66,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-orange-600 mb-2">Routes</h4>
+            <h4 className="font-semibold hover:text-orange-500 cursor-pointer ">Routes</h4>
             <ul className="space-y-2 text-sm">
               <li className="hover:text-orange-500 cursor-pointer">What's New</li>
               <li className="hover:text-orange-500 cursor-pointer">Stories</li>
@@ -77,9 +77,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-orange-600 mb-2">Privacy</h4>
+            <h4 className="font-semibold hover:text-orange-500 cursor-pointe">Privacy</h4>
             <ul className="space-y-2 text-sm">
-              <li className="hover:text-orange-500 cursor-pointer">Privacy</li>
+             
               <li className="hover:text-orange-500 cursor-pointer">Do Not Share My Personal Information</li>
               <li className="text-orange-600 hover:underline cursor-pointer font-medium">Log In</li>
             </ul>
