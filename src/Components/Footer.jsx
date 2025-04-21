@@ -40,57 +40,56 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex space-x-4 pt-2 text-xl text-black-800">
-            <FaTwitter className="hover:text-orange-500 transition-colors cursor-pointer" />
-            <FaYoutube className="hover:text-orange-500 transition-colors cursor-pointer" />
-            <FaInstagram className="hover:text-orange-500 transition-colors cursor-pointer" />
-            <FaLinkedin className="hover:text-orange-500 transition-colors cursor-pointer" />
-            <FaFacebook className="hover:text-orange-500 transition-colors cursor-pointer" />
+          {/* Social Icons - Changed to dark color and removed color change on hover */}
+          <div className="flex space-x-4 pt-2 text-xl text-gray-800">
+            <FaTwitter className="text-gray-800 cursor-pointer" />
+            <FaYoutube className="text-gray-800 cursor-pointer" />
+            <FaInstagram className="text-gray-800 cursor-pointer" />
+            <FaLinkedin className="text-gray-800 cursor-pointer" />
+            <FaFacebook className="text-gray-800 cursor-pointer" />
           </div>
         </div>
 
         {/* Right Columns */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 w-full md:w-2/3">
           <div>
-            <h4 className="font-semibold hover:text-orange-500 cursor-pointer ">Features</h4>
+       
             <ul className="space-y-2 text-sm">
-              <li className="hover:text-orange-500 cursor-pointer">Subscription</li>
-              <li className="hover:text-orange-500 cursor-pointer">Family Plan</li>
-              <li className="hover:text-orange-500 cursor-pointer">Student Discount</li>
-              <li className="hover:text-orange-500 cursor-pointer">Discount Programs (US Only)</li>
-              <li className="hover:text-orange-500 cursor-pointer">Send a Gift</li>
-              <li className="hover:text-orange-500 cursor-pointer">About</li>
-              <li className="hover:text-orange-500 cursor-pointer">Careers</li>
-              <li className="hover:text-orange-500 cursor-pointer">Press</li>
+            <li className="hover:underline cursor-pointer">Features</li>
+              <li className="hover:underline cursor-pointer">Subscription</li>
+              <li className="hover:underline cursor-pointer">Family Plan</li>
+              <li className="hover:underline cursor-pointer">Student Discount</li>
+              <li className="hover:underline cursor-pointer">Discount Programs (US Only)</li>
+              <li className="hover:underline cursor-pointer">Send a Gift</li>
+              <li className="hover:underline cursor-pointer">About</li>
+              <li className="hover:underline cursor-pointer">Careers</li>
+              <li className="hover:underline cursor-pointer">Press</li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold hover:text-orange-500 cursor-pointer ">Routes</h4>
+          
             <ul className="space-y-2 text-sm">
-              <li className="hover:text-orange-500 cursor-pointer">What's New</li>
-              <li className="hover:text-orange-500 cursor-pointer">Stories</li>
-              <li className="hover:text-orange-500 cursor-pointer">Support</li>
-              <li className="hover:text-orange-500 cursor-pointer">Business</li>
-              <li className="hover:text-orange-500 cursor-pointer">Partner Center</li>
-              <li className="hover:text-orange-500 cursor-pointer">Terms</li>
+            <li className="hover:underline cursor-pointer">Routes</li>
+              <li className="hover:underline cursor-pointer">What's New</li>
+              <li className="hover:underline cursor-pointer">Stories</li>
+              <li className="hover:underline cursor-pointer">Support</li>
+              <li className="hover:underline cursor-pointer">Business</li>
+              <li className="hover:underline cursor-pointer">Partner Center</li>
+              <li className="hover:underline cursor-pointer">Terms</li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold hover:text-orange-500 cursor-pointe">Privacy</h4>
+            
             <ul className="space-y-2 text-sm">
-             
-              <li className="hover:text-orange-500 cursor-pointer">Do Not Share My Personal Information</li>
+            <li className=" hover:underline cursor-pointer">Privacy</li>
+              <li className="hover:underline cursor-pointer">Do Not Share My Personal Information</li>
               <li className="text-orange-600 hover:underline cursor-pointer font-medium">Log In</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Footer Base */}
-      <div className="text-center text-xs text-gray-500 mt-12">
-        © {new Date().getFullYear()} Strava
-      </div>
+    
     </footer>
   );
 };
