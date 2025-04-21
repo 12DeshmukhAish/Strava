@@ -109,10 +109,7 @@ const Navbar = () => {
           <button className="px-4 py-1.5 border border-gray-300 rounded hover:bg-gray-100 text-sm font-semibold text-[#2e2e2e] cursor-pointer">
             Log In
           </button>
-          {/* Sign Up button - Only visible on desktop */}
-          <button className="hidden md:block px-4 py-1.5 bg-orange-500 text-white rounded hover:bg-orange-600 text-sm font-semibold cursor-pointer">
-            Sign Up
-          </button>
+       
         </div>
       </div>
 
