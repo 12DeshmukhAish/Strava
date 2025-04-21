@@ -74,7 +74,7 @@ const Hero = () => {
               Join Us Now
             </button>
             <div>
-              <a href="#" className="block  text-base opacity-90 hover:opacity-100 transition-all cursor-pointer">
+              <a href="#" className="block text-base opacity-90 hover:opacity-100 transition-all cursor-pointer">
                 Explore Strava
               </a>
             </div>
@@ -85,11 +85,11 @@ const Hero = () => {
       {/* 📱 Mobile View - Who We Are Section */}
       <div className="md:hidden bg-white text-center px-6 pt-12 pb-16">
         <h2 className="text-lg font-semibold text-gray-500 tracking-widest mb-4">WHO WE ARE</h2>
-        <h3 className="text-black-700  text-xl  leading-relaxed mb-8 ">
-    If you're active, Strava was made for you. Our mobile app and website enhance the
-    experience of sport and connect millions of athletes from around the world.
-    We're the social network for those who strive. Join us.
-  </h3>
+        <h3 className="text-black-700 text-xl leading-relaxed mb-8">
+          If you're active, Strava was made for you. Our mobile app and website enhance the
+          experience of sport and connect millions of athletes from around the world.
+          We're the social network for those who strive. Join us.
+        </h3>
 
         <div className="md:hidden bg-white">
           {/* Carousel */}
@@ -121,33 +121,30 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-  {/* Dots */}
-  <div className="flex justify-center space-x-8 mt-6 mb-8">
-              {[0, 1, 2].map((dot) => (
-                <button 
-                  key={dot}
-                  onClick={() => setActiveSlide(dot)}
-                  className={`w-3 h-3 rounded-full ${activeSlide === dot ? 'bg-gray-500' : 'bg-gray-300'} cursor-pointer`}
-                  aria-label={`Go to slide ${dot + 1}`}
-                />
-              ))}
-            </div>
+                  {/* Dots */}
+                  <div className="flex justify-center space-x-8 mt-6 mb-8">
+                    {[0, 1, 2].map((dot) => (
+                      <button 
+                        key={dot}
+                        onClick={() => setActiveSlide(dot)}
+                        className={`w-3 h-3 rounded-full ${activeSlide === dot ? 'bg-gray-500' : 'bg-gray-300'} cursor-pointer`}
+                        aria-label={`Go to slide ${dot + 1}`}
+                      />
+                    ))}
+                  </div>
                   <h2 className="text-xl font-semibold text-gray-900 mb-3">{slide.title}</h2>
                   <p className="text-[15px] text-black-700 leading-relaxed font-semibold px-2">{slide.description}</p>
                 </div>
               </div>
             ))}
             
-          
-            
             {/* Join Now Button */}
             <div className="flex justify-center mt-20">
               <a href="#" className="text-orange-500 font-semibold text-2xl flex items-center cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Join Us Now</span>
-             
               </a>
             </div>
           </div>
@@ -155,7 +152,7 @@ const Hero = () => {
       </div>
     
       <div className="md:hidden bg-white pt-6 pb-12 px-6 text-center border-t border-gray-200">
-        <h3 className=" text-2xl font-semibold text-gray-900 mb-5 leading-snug">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-5 leading-snug">
           Join for the tracking, stay for the community.
         </h3>
 
@@ -174,7 +171,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Paragraphs under image */}
-        <div className="text-left  px-1 leading-relaxed text-gray-800">
+        <div className="text-left px-1 leading-relaxed text-gray-800">
           <h3 className="font-semibold mb-1 text-xl">A no BS network.</h3>
           <p className="mb-5 text-lg">
             The Strava feed is full of inspiring activities, crazy adventures and
@@ -194,7 +191,7 @@ const Hero = () => {
       {/* 📱 Join for Tracking Section with text-on-image effect */}
       <div className="md:hidden bg-white pt-4 pb-8 px-6 text-center border-t border-gray-200">
         {/* 📱 Mobile View - Features Section */}
-        <h2 className="text-2xl  text-center mb-8 text-gray-900">Explore our features.</h2>
+        <h2 className="text-2xl text-center mb-8 text-gray-900">Explore our features.</h2>
 
         {/* Track & Analyze */}
         <div className="mb-12 text-center">
@@ -205,7 +202,7 @@ const Hero = () => {
               className="w-8 h-8 text-orange-500"
             />
           </div> 
-          <h3 className=" text-xl text-center mb-2 text-gray-900">Track & Analyze</h3>
+          <h3 className="text-xl text-center mb-2 text-gray-900">Track & Analyze</h3>
           <p className="text-sm font-semibold text-gray-900">
             Learn about recording an activity on Strava and all the ways you can analyze your performance.
           </p>
@@ -220,7 +217,7 @@ const Hero = () => {
               className="w-8 h-8 text-orange-500"
             />
           </div>
-          <h3 className="text-xl  text-center mb-4 text-gray-900">Share & Connect</h3>
+          <h3 className="text-xl text-center mb-4 text-gray-900">Share & Connect</h3>
           <p className="text-sm font-semibold text-gray-900">
             Workout with friends, stay motivated, get inspired – our community is what separates Strava from the rest.
           </p>
@@ -235,7 +232,7 @@ const Hero = () => {
               className="w-8 h-8 text-orange-500"
             />
           </div>
-          <h3 className="text-xl  text-center mb-4 text-gray-900">Explore & Compete</h3>
+          <h3 className="text-xl text-center mb-4 text-gray-900">Explore & Compete</h3>
           <p className="text-sm font-semibold text-gray-900">
             Discover your next goal with Strava segments, routes, maps, clubs, challenges and race courses.
           </p>
@@ -250,7 +247,7 @@ const Hero = () => {
 
       {/* 📱 Mobile View - Ready to give it a shot? */}
       <div className="md:hidden bg-white px-6 py-10 border-t border-gray-200">
-        <h2 className="text-2xl  text-center mb-8">Ready to give it a shot?</h2>
+        <h2 className="text-2xl text-center mb-8">Ready to give it a shot?</h2>
 
         <ul className="mb-12 space-y-4">
           <li className="flex items-center">
@@ -272,7 +269,7 @@ const Hero = () => {
         </ul>
 
         <div className="text-center">
-          <a href="#" className="flex items-center justify-center text-orange-500 font-semibold cursor-pointer hover:underline  text-xl mb-4">
+          <a href="#" className="flex items-center justify-center text-orange-500 font-semibold cursor-pointer hover:underline text-xl mb-4">
             <ChevronRight className="w-6 h-7 ml-1" />
             <span>Join Us Now</span>
           </a>
@@ -373,32 +370,33 @@ const Hero = () => {
 
         {/* Content */}
         <div className="relative z-50 py-30">
-          <h3 className="text-2xl  mb-6 leading-snug">
+          <h3 className="text-2xl mb-6 leading-snug">
             You don't have to run or ride to love our features.
             Strava works with many of your other favorite sports, like skiing, kiteboarding,
-             crossfit, kayaking, inline skating, rock climbing, surfing, yoga and more.
+            crossfit, kayaking, inline skating, rock climbing, surfing, yoga and more.
             Give it a shot, you'll dig it.
           </h3>
         </div>
       </div>
 
-      {/* 📱 Mobile View – Feature + Subscription Cards */}
-      
+      {/* 📱 Mobile View – Feature + Subscription Cards - FIXED PLACEMENT */}
+      <div className="md:hidden">
         {/* Strava Features Card */}
         <div className="bg-[#fc5200] text-white text-center py-25 px-6">
-  <h2 className="text-lg font-semibold mb-16">Strava Features</h2>
-  <button className="border-2 border-gray-500 text-white font-semibold rounded-full px-6 py-2 text-sm hover:border-transparent transition-all cursor-pointer">
-    EXPLORE
-  </button>
-</div>
+          <h2 className="text-lg font-semibold mb-16">Strava Features</h2>
+          <button className="border-2 border-gray-500 text-white font-semibold rounded-full px-6 py-2 text-sm hover:border-transparent transition-all cursor-pointer">
+            EXPLORE
+          </button>
+        </div>
 
-{/* Strava Subscription Card */}
-<div className="bg-[#1e1e1e] text-white text-center py-25 px-6">
-  <h2 className="text-lg font-semibold mb-16">Strava Subscription</h2>
-  <button className="border border-gray-500 text-white font-semibold rounded-full px-6 py-2 text-sm hover:bg-black hover:text-white hover:border-[#fc5200] transition-all cursor-pointer">
-    EXPLORE
-  </button>
-</div>
+        {/* Strava Subscription Card */}
+        <div className="bg-[#1e1e1e] text-white text-center py-25 px-6">
+          <h2 className="text-lg font-semibold mb-16">Strava Subscription</h2>
+          <button className="border border-gray-500 text-white font-semibold rounded-full px-6 py-2 text-sm hover:bg-black hover:text-white hover:border-[#fc5200] transition-all cursor-pointer">
+            EXPLORE
+          </button>
+        </div>
+      </div>
 
       {/* 🖥️ Desktop Layout */}
       <div className="hidden md:block w-full h-screen">
